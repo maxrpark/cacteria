@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- awesome fonts -->
+    <script
+      src="https://kit.fontawesome.com/6f654f2ea2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Rancho&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cacteria</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__main">
+          <a href="index.html"><h3 class="logo">cacteria</h3></a>
+
+          <i class="fas fa-ellipsis-h toggle-btn"></i>
+        </div>
+        <div class="navbar__links-container" id="links-container">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="checkout.html"
+                ><div class="cart">
+                  <p>
+                    Cart <span><i class="fas fa-shopping-cart"></i></span>
+                  </p>
+                  <span class="number-items"></span></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <!-- HERO -->
+    <header class="hero">
+      <div class="img-slider">
+        <div class="slide active">
+          <img src="./img/cacteria-bg-1.jpg" alt="" />
+          <div class="info">
+            <h2>Slide 01</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="btn-main"><a href="#">Products</a></button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./img/cacteria-bg-2.jpg" alt="" />
+          <div class="info">
+            <h2>Slide 02</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="hero-btn"><a href="#">Products</a></button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./img/cacteria-bg-3.jpg" alt="" />
+          <div class="info">
+            <h2>Slide 03</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="hero-btn"><a href="#">Products</a></button>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <div class="btn active"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+        </div>
+      </div>
+    </header>
+    <!-- END OF HERO -->
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about__container">
+        <!-- single ifo about -->
+        <div class="single-info">
+          <span class="about-icons">
+            <i class="fas fa-seedling"></i>
+          </span>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            quos sapiente, maiores voluptatum ab debitis.
+          </p>
+        </div>
+        <!-- end of single ifo about -->
+        <!-- single ifo about -->
+        <div class="single-info">
+          <span class="about-icons">
+            <i class="fas fa-globe-americas"></i>
+          </span>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            quos sapiente, maiores voluptatum ab debitis.
+          </p>
+        </div>
+        <!-- end of single ifo about -->
+        <!-- single ifo about -->
+        <div class="single-info">
+          <span class="about-icons">
+            <i class="fas fa-hand-holding-heart"></i>
+          </span>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            quos sapiente, maiores voluptatum ab debitis.
+          </p>
+        </div>
+        <!-- end of single ifo about -->
+      </div>
+    </section>
+
+    <!-- END OF DETAILS -->
+
+    <!-- FEATURED -->
+    <section class="featured section-center">
+      <div class="section-title">
+        <h2>Featured</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore a
+          facere temporibus non eligendi cum, voluptatum accusamus excepturi
+          nihil dolore.
+        </p>
+      </div>
+
+      <div class="featured__products">
+        <!-- single product -->
+        <article class="featured__products--single">
+          <img src="./img/cacteria-bg-1.jpg" class="img featured-img" alt="" />
+          <div class="product-info">
+            <p>Challo</p>
+            <p>$25 USD</p>
+          </div>
+        </article>
+        <!-- end of single product -->
+        <!-- single product -->
+        <article class="featured__products--single">
+          <img src="./img/cacteria-bg-1.jpg" class="img featured-img" alt="" />
+          <div class="product-info">
+            <p>Challo</p>
+            <p>$25 USD</p>
+          </div>
+        </article>
+        <!-- end of single product -->
+        <!-- single product -->
+        <article class="featured__products--single">
+          <img src="./img/cacteria-bg-1.jpg" class="img featured-img" alt="" />
+          <div class="product-info">
+            <p>Challo</p>
+            <p>$25 USD</p>
+          </div>
+        </article>
+        <!-- end of single product -->
+      </div>
+    </section>
+    <!-- END OF FEATURED-->
+
+    <!-- COMING SOON -->
+    <section class="coming">
+      <article class="coming__img">
+        <img src="./img/greenit-img.png" class="img" alt="gift" />
+      </article>
+      <article class="coming__info">
+        <div class="info-text">
+          <h5>Coming soon</h5>
+          <h2>Greenit</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit molestiae cum libero atque ut voluptate qui
+            consectetur aliquid incidunt voluptatem quos, dolore, non commodi
+            quaerat aliquam eligendi, quisquam totam blanditiis.
+          </p>
+        </div>
+        <div class="deadline">
+          <!-- days -->
+          <div class="deadline__format">
+            <div>
+              <h4 class="days">34</h4>
+              <span>days</span>
+            </div>
+          </div>
+          <!-- end of days -->
+          <!-- days -->
+          <div class="deadline__format">
+            <div>
+              <h4 class="hours">34</h4>
+              <span>hours</span>
+            </div>
+          </div>
+          <!-- end of days -->
+          <!-- minutes -->
+          <div class="deadline__format">
+            <div>
+              <h4 class="minutes">34</h4>
+              <span>mins</span>
+            </div>
+          </div>
+          <!-- end of days -->
+          <!-- minutes -->
+          <div class="deadline__format">
+            <div>
+              <h4 class="seconds">34</h4>
+              <span>secs</span>
+            </div>
+          </div>
+          <!-- end of days -->
+        </div>
+      </article>
+    </section>
+    <!-- END OF COMING SOON -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__section">
+        &copy;Cacteria “All Rights Reserved” <span class="date"></span>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

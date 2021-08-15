@@ -1,0 +1,101 @@
+.product-container {
+  display: grid;
+  justify-content: space-between;
+  padding: 1rem;
+
+  & .product-img {
+    border-radius: 20px;
+    border: 2px solid $primaryBrown;
+  }
+  &__info {
+    padding: 0 1rem;
+    & h3 {
+      margin-bottom: 0.5rem;
+    }
+    & p {
+      margin: 0.5rem;
+      line-height: 1.7rem;
+    }
+    &--details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  & .btn-product {
+    border-color: $color-black;
+    max-width: 200px;
+    text-align: center;
+    width: auto;
+    margin-top: 1rem;
+    display: block;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.205);
+      border: 3px solid $color-black;
+      transform: translateY(-3px);
+    }
+    &:active {
+      transform: translateY(-2px);
+    }
+  }
+  @media screen and (min-width: 920px) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1070px;
+    margin: 2rem auto;
+    column-gap: 2rem;
+    padding: 2rem;
+    min-height: 70vh;
+    place-content: center;
+
+    & .product-img {
+      min-height: 500px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+    }
+    & .after {
+      position: relative;
+
+      &::before {
+        content: '';
+        border: 2px solid $primaryBrown;
+        border-radius: 20px;
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-10%, -5%);
+      }
+      &::after {
+        content: '';
+        border: 2px solid $primaryBrown;
+        border-radius: 20px;
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-20%, 15%);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.recommended {
+  @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+  }
+  & img {
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+.recommended-container {
+  margin: 2rem 0;
+}

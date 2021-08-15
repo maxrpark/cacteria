@@ -1,0 +1,119 @@
+.coming {
+  text-align: center;
+  display: grid;
+  align-content: center;
+  min-height: 50vh;
+  width: 100%;
+  background: $primaryGreen;
+  @media screen and (min-width: 920px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+  }
+  &__img {
+    margin: 2rem;
+    & img {
+      border-radius: $borderRadious;
+    }
+  }
+
+  &__info {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+
+    & .info-text {
+      & h2 {
+        text-transform: uppercase;
+        margin-top: 0.5rem;
+      }
+      & p {
+        margin: 1.5rem 0;
+        width: 90%;
+        margin: 1rem auto;
+        line-height: 1.7rem;
+      }
+      @media screen and (min-width: 800px) {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.deadline {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  &__format {
+    background: $color-white;
+    color: $color-black;
+    margin-right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    align-self: center;
+    place-items: center;
+    text-align: center;
+    & h4 {
+      font-size: 1.1rem;
+    }
+    & span {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.5rem;
+    }
+    & h4:not(.expired) {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: var(--spacing);
+    }
+  }
+  @media screen and (min-width: 410px) {
+    &__format {
+      width: 5rem;
+      height: 5rem;
+      & h4 {
+        font-size: 1.6rem;
+      }
+      & span {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+.about {
+  min-height: 40vh;
+  background: $primaryBrown;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  &__container {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    & .single-info {
+      border-radius: $borderRadious;
+      border: 2px solid $color-white;
+      padding: 2rem;
+      & i {
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      & p {
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 800px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

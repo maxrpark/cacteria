@@ -1,0 +1,45 @@
+body {
+  background: $color-grey;
+  font-family: $font-1;
+  color: $color-black;
+}
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+li {
+  list-style: none;
+}
+.img {
+  width: 100%;
+}
+
+.section-center {
+  min-height: 80vh;
+  display: grid;
+  align-content: center;
+  margin: 2rem auto;
+}
+
+.btn-main {
+  background: rgba(255, 255, 255, 0.205);
+  border: 3px solid $color-white;
+  padding: 1rem;
+  width: 10rem;
+  margin: 0 auto;
+  cursor: pointer;
+  & a {
+    color: $color-black;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.205);
+    border: 3px solid $color-black;
+    transform: scale(1.09);
+  }
+  &:active {
+    transform: scale(1);
+  }
+}

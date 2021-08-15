@@ -1,0 +1,23 @@
+// Basic
+@import './basic/var';
+@import './basic/reset';
+@import './basic/setup';
+@import './basic/animations';
+@import './basic/typography';
+
+// Layout
+@import './layout/navbar';
+@import './layout/hero';
+@import './layout/footer';
+
+// Components
+@import './components/pageTitle';
+@import './components/featured';
+@import './components/modal';
+
+// Pages
+@import './pages/home';
+@import './pages/product';
+@import './pages/about';
+@import './pages/products';
+@import './pages/checkout';

@@ -1,0 +1,17 @@
+.about-section {
+  min-height: 100vh;
+  & .about-us {
+    h3 {
+      text-align: center;
+      margin: 2rem;
+    }
+    & p {
+      padding: 1rem;
+      width: 90%;
+      max-width: 920px;
+      margin: 0 auto;
+      line-height: 1.7rem;
+      letter-spacing: 1.5px;
+    }
+  }
+}

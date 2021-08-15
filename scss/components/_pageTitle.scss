@@ -1,0 +1,17 @@
+.page-title {
+  background-color: $primaryBrown;
+  &__container {
+    height: 5rem;
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: $color-white;
+    & a {
+      color: $color-white;
+    }
+  }
+}

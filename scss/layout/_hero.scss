@@ -1,0 +1,151 @@
+.hero {
+  height: calc(100vh - 60px);
+  background: $primaryBlue;
+}
+
+.img-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #1d212b;
+  & img {
+    width: 100%;
+    height: calc(100vh - 60px);
+    object-fit: cover;
+  }
+  & .navigation {
+    display: flex;
+    gap: 1rem;
+  }
+  & .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+    & img {
+      z-index: 1;
+      width: 100%;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 60px);
+      background: linear-gradient(rgba(0, 0, 0, 0.2)) rgba(0, 0, 0, 0.2);
+    }
+  }
+  & .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: all 3s ease-in-out;
+    transition-property: clip-path;
+  }
+}
+
+.info {
+  width: 90%;
+  height: 30vh;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  gap: 0.5rem;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 20px;
+  z-index: 1;
+  & h2 {
+    font-family: $font-3;
+    color: $color-white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+  & p {
+    color: $color-white;
+    font-size: 1rem;
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin: 0 auto;
+    line-height: 1.7rem;
+  }
+}
+
+.navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  & .btn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    cursor: pointer;
+    &.active {
+      background: $color-black;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+@media (max-width: 820px) {
+  .info {
+    & h2 {
+      font-size: 2.1rem;
+    }
+    & p {
+      width: 70%;
+      font-size: 1rem;
+    }
+  }
+
+  .navigation {
+    bottom: 25px;
+    & .btn {
+      margin: 8px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .info {
+    & h2 {
+      font-size: 2rem;
+    }
+    & p {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }
+
+  .navigation {
+    bottom: 1rem;
+    & .btn {
+      margin: 6px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .info {
+    & h2 {
+      font-size: 1.2rem;
+    }
+    & p {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }
+
+  .navigation {
+    bottom: 10px;
+  }
+}

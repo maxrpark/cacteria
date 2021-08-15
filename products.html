@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- awesome fonts -->
+    <script
+      src="https://kit.fontawesome.com/6f654f2ea2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Rancho&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <title>Products</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__main">
+          <a href="index.html"><h3 class="logo">cacteria</h3></a>
+
+          <i class="fas fa-ellipsis-h toggle-btn"></i>
+        </div>
+        <div class="navbar__links-container" id="links-container">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="checkout.html"
+                ><div class="cart">
+                  <p>
+                    Cart <span><i class="fas fa-shopping-cart"></i></span>
+                  </p>
+                  <span class="number-items"></span></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- PAGE TITLE -->
+    <section class="page-title">
+      <div class="page-title__container">
+        <a href="index.html">Home</a> <span>/</span>
+        <a href="products.html">Products</a> <span>/</span>
+      </div>
+    </section>
+    <!-- END OF PAGE TITLE -->
+
+    <!-- PRODUCTS -->
+    <section class="products">
+      <div class="section-title">
+        <h2>Product</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          ea at atque rerum voluptatum eveniet!
+        </p>
+      </div>
+      <div class="products-section"></div>
+    </section>
+    <!-- END OF PRODUCTS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__section">
+        &copy;Cacteria “All Rights Reserved” <span class="date"></span>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+    <script type="module" src="./products.js"></script>
+  </body>
+</html>

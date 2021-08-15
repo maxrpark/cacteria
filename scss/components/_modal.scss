@@ -1,0 +1,48 @@
+.modal {
+  display: none;
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    & .box {
+      position: relative;
+      background-color: $color-white;
+      height: 300px;
+      margin: 1rem;
+      padding: 2rem;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+
+      & .close-modal {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.5rem;
+      }
+      & .clear-cart {
+        border-color: $color-black;
+        text-align: center;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .box {
+      min-width: 600px;
+      & h5 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.show-modal {
+  display: block;
+}

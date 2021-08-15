@@ -1,0 +1,9 @@
+.products-section {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  & .single-product {
+    height: 300px;
+  }
+}
