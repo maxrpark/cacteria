@@ -881,6 +881,7 @@ h5 {
     place-content: center;
   }
   .product-container .product-img {
+    min-height: 300px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
