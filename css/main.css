@@ -36,7 +36,7 @@ li {
 }
 
 .btn-main {
-  background: rgba(255, 255, 255, 0.205);
+  background: rgba(255, 255, 255, 0.2);
   border: 3px solid #fff;
   padding: 1rem;
   width: 10rem;
@@ -52,7 +52,7 @@ li {
 }
 
 .btn-main:hover {
-  background: rgba(255, 255, 255, 0.205);
+  background: rgba(255, 255, 255, 0.9);
   border: 3px solid #292929;
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
@@ -337,6 +337,13 @@ h5 {
 .hero {
   height: calc(100vh - 60px);
   background: #1d212b;
+}
+
+.hero .btn-main a {
+  font-weight: bold;
+  color: #000;
+  font-family: "Rye", cursive;
+  font-size: 1.2rem;
 }
 
 .img-slider {

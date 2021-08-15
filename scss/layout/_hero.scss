@@ -1,6 +1,13 @@
 .hero {
   height: calc(100vh - 60px);
   background: $primaryBlue;
+
+  & .btn-main a {
+    font-weight: bold;
+    color: #000;
+    font-family: $font-3;
+    font-size: 1.2rem;
+  }
 }
 
 .img-slider {

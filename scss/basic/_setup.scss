@@ -22,7 +22,7 @@ li {
 }
 
 .btn-main {
-  background: rgba(255, 255, 255, 0.205);
+  background: rgba(255, 255, 255, 0.2);
   border: 3px solid $color-white;
   padding: 1rem;
   width: 10rem;
@@ -35,7 +35,7 @@ li {
     letter-spacing: 0.1rem;
   }
   &:hover {
-    background: rgba(255, 255, 255, 0.205);
+    background: rgba(255, 255, 255, 0.9);
     border: 3px solid $color-black;
     transform: scale(1.09);
   }
