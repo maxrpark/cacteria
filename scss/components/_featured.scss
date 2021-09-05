@@ -2,6 +2,8 @@
   &__products {
     @media screen and (min-width: 768px) {
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &--single {
       min-height: 250px;
