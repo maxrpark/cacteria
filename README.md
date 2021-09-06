@@ -5,10 +5,6 @@
 ![alt text](https://img.shields.io/badge/My%20first%20website-1.0.8-yellow)  ![alt text](https://img.shields.io/badge/Made%20by-Max-brightgreen) ![alt text](https://img.shields.io/badge/Using%20by-ServelessFunctions-lightblue)
 </div>
 
-<p align="center">
-<img src="https://github.com/maxrpark/myfirstwebsite1.0.4/blob/main/website-img/myfirstwebsite1.0.8.png" width="70%" align="center">
-<p>
-
 ## This is my first website 1.0.8
 
  Working with API is one of the most fun things you can do, at least when you are know at coding.  Because it is so much fun to fetch data and populate your website from an external place.
